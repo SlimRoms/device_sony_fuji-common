@@ -19,7 +19,7 @@ TARGET_SPECIFIC_HEADER_PATH := device/sony/fuji-common/include
 # Kernel properties
 TARGET_KERNEL_SOURCE := kernel/sony/msm8x60
 #BOARD_USES_UNCOMPRESSED_BOOT := true
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3/bin/arm-eabi-
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8660
@@ -107,9 +107,6 @@ TARGET_USES_SFBYBASS := true
 #SOMC_CFG_SENSORS_PROXIMITY_APDS9702 := yes
 #SOMC_CFG_SENSORS_ACCEL_BMA250NA_INPUT := yes
 #SOMC_CFG_SENSORS_COMPASS_AK8972 := yes
-
-# Light Sensor
-BOARD_SYSFS_LIGHT_SENSOR := /sys/class/leds/lcd-backlight/als/enable
 
 # FM radio
 COMMON_GLOBAL_CFLAGS += -DSTE_FM

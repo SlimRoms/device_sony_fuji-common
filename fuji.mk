@@ -165,6 +165,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp,adb
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=320
+
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril_class=SonyQualcomm8x60RIL \
@@ -188,10 +191,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.gprsclass=10 \
     ro.use_data_netmgrd=true \
     ro.ril.transmitpower=true
-
-#### Goo Manager support
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.goo.developerid=RaymanFX \
-    ro.goo.board=$(subst full_,,$(TARGET_PRODUCT)) \
-    ro.goo.rom=opensemc_cm \
-    ro.goo.version=$(shell date +%s)
