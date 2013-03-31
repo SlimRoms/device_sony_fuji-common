@@ -168,6 +168,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=320
 
+# ALS
+PRODUCT_PROPERTY_OVERRIDES += \
+   ro.hardware.respect_als=true
+
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril_class=SonyQualcomm8x60RIL \
