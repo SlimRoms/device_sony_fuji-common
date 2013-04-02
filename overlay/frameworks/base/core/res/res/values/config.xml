@@ -135,6 +135,10 @@
 
     <integer name="config_screenBrightnessDim">1</integer>
 
+    <!-- Default screen brightness setting.
+         Must be in the range specified by minimum and maximum. -->
+    <integer name="config_screenBrightnessSettingDefault">148</integer>
+
     <string-array translatable="false" name="config_tether_usb_regexs">
     <item>"rndis0"</item>
     </string-array>
